@@ -42,6 +42,30 @@
                         <span class="mdl-textfield__error">Input is not a number!</span>
                     </div>
                 </form>
+
+                <span class="mdl-layout-title">Victim Sex</span>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                    <input type="radio" id="option-1" class="mdl-radio__button" name="gender" value="0">
+                    <span class="mdl-radio__label">Male</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                    <input type="radio" id="option-2" class="mdl-radio__button" name="gender" value="0">
+                    <span class="mdl-radio__label">Female</span>
+                </label>
+
+                <!-- Name Field -->
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="victimEth">
+                        <label class="mdl-textfield__label" for="sample1">Victim Ethnicity</label>
+                    </div>
+                </form>
+
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" pattern="[0-9]*" id="phone">
+                    <label class="mdl-textfield__label" for="phone">Phone</label>
+                    <span class="mdl-textfield__error">Enter a Phone Number</span>
+                </div>
             </div>
         </section>
         <section class="mdl-layout__tab-panel" id="involved-party">
