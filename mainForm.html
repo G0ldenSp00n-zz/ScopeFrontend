@@ -38,17 +38,19 @@
                 <!-- Numeric Textfield -->
                 <form action="#">
                     <div class="mdl-textfield mdl-js-textfield">
-                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]?" id="sample2">
                         <label class="mdl-textfield__label" for="sample2">Approximate Age</label>
-                        <span class="mdl-textfield__error">Input is not a number!</span>
+                        <span class="mdl-textfield__error">Input the victim's age</span>
                     </div>
                 </form>
 
-                <span class="mdl-layout-title">Victim Sex</span>
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                     <input type="radio" id="option-1" class="mdl-radio__button" name="gender" value="0">
                     <span class="mdl-radio__label">Male</span>
                 </label>
+
+                <br/>
+
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
                     <input type="radio" id="option-2" class="mdl-radio__button" name="gender" value="0">
                     <span class="mdl-radio__label">Female</span>
@@ -93,14 +95,15 @@
                 </form>
 
                 <!-- Sibling Sex -->
-                <span class="mdl-layout-title1">Sex</span>
-                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="siblingMale">
-                    <input type="radio" id="siblingMale" class="mdl-radio__button" name="gender" value="0">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                    <input type="radio" id="option-1" class="mdl-radio__button" name="gender" value="0">
                     <span class="mdl-radio__label">Male</span>
                 </label>
 
-                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="siblingFemale">
-                    <input type="radio" id="siblingFemale" class="mdl-radio__button" name="gender" value="0">
+                <br/>
+
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                    <input type="radio" id="option-2" class="mdl-radio__button" name="gender" value="0">
                     <span class="mdl-radio__label">Female</span>
                 </label>
 
