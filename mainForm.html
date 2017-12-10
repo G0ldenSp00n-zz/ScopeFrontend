@@ -5,6 +5,7 @@
     <title>Report Form</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="main.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
@@ -42,13 +43,103 @@
                         <span class="mdl-textfield__error">Input is not a number!</span>
                     </div>
                 </form>
+
+                <span class="mdl-layout-title">Victim Sex</span>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                    <input type="radio" id="option-1" class="mdl-radio__button" name="gender" value="0">
+                    <span class="mdl-radio__label">Male</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                    <input type="radio" id="option-2" class="mdl-radio__button" name="gender" value="0">
+                    <span class="mdl-radio__label">Female</span>
+                </label>
+
+                <!-- Name Field -->
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="victimEth">
+                        <label class="mdl-textfield__label" for="sample1">Victim Ethnicity</label>
+                    </div>
+                </form>
+
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" id="phone">
+                    <label class="mdl-textfield__label" for="phone">Phone</label>
+                    <span class="mdl-textfield__error">Enter a Phone Number (123-456-7890)</span>
+                </div>
             </div>
         </section>
         <section class="mdl-layout__tab-panel" id="involved-party">
-            <div class="page-content"><!-- Your content goes here --></div>
+            <div class="page-content">
+
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]?" id="How many siblings">
+                        <label class="mdl-textfield__label" for="How many siblings">Number of Siblings</label>
+                        <span class="mdl-textfield__error">Please input a number</span>
+                    </div>
+                </form>
+
+                <!-- Sibling Name -->
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="siblingName">
+                        <label class="mdl-textfield__label" for="SiblingName">(Name: Last, First, Middle; Ex. Roosevelt, Franklin Delano)</label>
+                    </div>
+                </form>
+
+                <!-- Sibling Sex -->
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="siblingSex">
+                        <label class="mdl-textfield__label" for="siblingSex">Sex</label>
+                    </div>
+                </form>
+
+                <!-- Sibling Birthdate -->
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="siblingBirthdate">
+                        <label class="mdl-textfield__label" for="siblingBirthdate">Birthdate</label>
+                    </div>
+                </form>
+
+                <!-- Sibling Ethnicity -->
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="siblingEthnicity">
+                        <label class="mdl-textfield__label" for="siblingBirthdate">Ethnicity</label>
+                    </div>
+                </form>
+
+            </div>
         </section>
         <section class="mdl-layout__tab-panel" id="incident-info">
-            <div class="page-content"><!-- Your content goes here --></div>
+            <div class="page-content">
+
+                <!-- Numeric Textfield -->
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d">
+                        <label class="mdl-textfield__label" for="sample2">Date of Incident</label>
+                        <span class="mdl-textfield__error">Invalid Date (mm/dd/yyyy)</span>
+                    </div>
+                </form>
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="incidentLoc">
+                        <label class="mdl-textfield__label" for="incidentLoc">Place of incident (Street Name and City).</label>
+                    </div>
+                </form>
+
+                <!-- Floating Multiline Textfield -->
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <textarea class="mdl-textfield__input" type="text" rows= "100" id="sample5" ></textarea>
+                        <label class="mdl-textfield__label" for="sample5">Narrative Description (What victim(s) said/what the mandated reporter observed/what person accompanying the victim(s) said/similar or past incidents involving the victim(s) or suspect)</label>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 </div>
