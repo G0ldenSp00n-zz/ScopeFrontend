@@ -69,6 +69,10 @@
                 </div>
             </div>
         </section>
+
+
+
+
         <section class="mdl-layout__tab-panel" id="involved-party">
             <div class="page-content">
 
@@ -89,18 +93,24 @@
                 </form>
 
                 <!-- Sibling Sex -->
-                <form action="#">
-                    <div class="mdl-textfield mdl-js-textfield">
-                        <input class="mdl-textfield__input" type="text" id="siblingSex">
-                        <label class="mdl-textfield__label" for="siblingSex">Sex</label>
-                    </div>
-                </form>
+                <span class="mdl-layout-title1">Sex</span>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="siblingMale">
+                    <input type="radio" id="siblingMale" class="mdl-radio__button" name="gender" value="0">
+                    <span class="mdl-radio__label">Male</span>
+                </label>
+
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="siblingFemale">
+                    <input type="radio" id="siblingFemale" class="mdl-radio__button" name="gender" value="0">
+                    <span class="mdl-radio__label">Female</span>
+                </label>
 
                 <!-- Sibling Birthdate -->
+
                 <form action="#">
                     <div class="mdl-textfield mdl-js-textfield">
-                        <input class="mdl-textfield__input" type="text" id="siblingBirthdate">
-                        <label class="mdl-textfield__label" for="siblingBirthdate">Birthdate</label>
+                        <input class="mdl-textfield__input" type="text" pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d">
+                        <label class="mdl-textfield__label" for="sample2">Date of Incident</label>
+                        <span class="mdl-textfield__error">Invalid Date (mm/dd/yyyy)</span>
                     </div>
                 </form>
 
@@ -108,7 +118,7 @@
                 <form action="#">
                     <div class="mdl-textfield mdl-js-textfield">
                         <input class="mdl-textfield__input" type="text" id="siblingEthnicity">
-                        <label class="mdl-textfield__label" for="siblingBirthdate">Ethnicity</label>
+                        <label class="mdl-textfield__label" for="siblingEthnicity">Ethnicity</label>
                     </div>
                 </form>
 
@@ -135,11 +145,16 @@
                 <!-- Floating Multiline Textfield -->
                 <form action="#">
                     <div class="mdl-textfield mdl-js-textfield">
-                        <textarea class="mdl-textfield__input" type="text" rows= "100" id="sample5" ></textarea>
-                        <label class="mdl-textfield__label" for="sample5">Narrative Description (What victim(s) said/what the mandated reporter observed/what person accompanying the victim(s) said/similar or past incidents involving the victim(s) or suspect)</label>
-                    </div>
+                        <textarea class="mdl-textfield__input" type="text" rows= "9" id="sample5" ></textarea>
+                        <label class="mdl-textfield__label" for="sample5">Describe Incident:
                 </form>
             </div>
+
+            <!-- Accent-colored raised button -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+                SUBMIT
+            </button>
+
         </section>
     </main>
 </div>
